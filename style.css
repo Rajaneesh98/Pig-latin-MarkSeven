@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins:ital,wght@0,700;1,400&display=swap");
+
+:root {
+  --primary-color: #fcd7de;
+  --dark-grey: #4b5563;
+  --light-grey: #f3f4f6;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  max-width: 600px;
+}
+
+#text-area {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 20vh;
+  font-size: large;
+  border: 2px solid black;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+#btn-translate {
+  background-color: var(--primary-color);
+  margin-right: 1rem;
+  display: inline;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: large;
+  font-family: "Open Sans", sans-serif;
+  width: 100px;
+  min-height: 6vh;
+  border-radius: 1rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+#output {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 20vh;
+  overflow: scroll;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+.header .header-heading {
+  color: var(--dark-grey);
+  text-align: center;
+}
+
+.header {
+  background-color: var(--primary-color);
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  border-top-left-radius: 1rem;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 3rem 1rem;
+  color: black;
+  border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+  font-size: 1.3rem;
+}
