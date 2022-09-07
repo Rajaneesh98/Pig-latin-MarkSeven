@@ -4,6 +4,8 @@ let textInput = document.querySelector("#text-area");
 
 let textOutput = document.querySelector("#output");
 
+let errorOutput = document.querySelector("#empty-error");
+
 let url = "https://api.funtranslations.com/translate/pig-latin.json";
 
 function geturl(text) {
@@ -17,6 +19,10 @@ function errorHandler(error) {
 
 function clickHandler() {
   let text = textInput.value;
+  if (!text || !text.trim()) {
+    console.log("text:", text);
+    return (errorOutput.innerText = '"Enter Something in English!"');
+  }
 
   fetch(geturl(text))
     .then((response) => response.json())

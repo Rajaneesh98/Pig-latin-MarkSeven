@@ -78,3 +78,11 @@ h3 {
 .footer .footer-header {
   font-size: 1.3rem;
 }
+
+#empty-error {
+  margin: 10px;
+  padding: 1rem;
+  color: red;
+  text-align: center;
+  font-size: 20px;
+}
